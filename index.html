@@ -34,6 +34,10 @@
   footer{border-top:1px solid var(--line); margin-top:36px; padding:22px 0 40px; text-align:center; color:var(--muted); font-size:.92rem;}
   footer nav{margin-bottom:10px;}
   footer a{color:var(--teal); text-decoration:none; margin:0 10px; font-weight:600;}
+  .signup{background:#f2fbfa; border:1px solid var(--line); border-radius:14px; padding:24px; text-align:center;}
+  .signup form{margin-top:14px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;}
+  .signup input[type=email]{padding:12px 16px; border:1px solid var(--line); border-radius:999px; font-size:1rem; min-width:260px;}
+  .signup button{background:var(--teal); color:#fff; border:none; padding:12px 22px; border-radius:999px; font-weight:700; font-size:1rem; cursor:pointer;}
 </style>
 </head>
 <body>
@@ -72,6 +76,19 @@
     <h2>Made by a patient, for patients</h2>
     <p>AERDaily is built by Matt Rey, an electrician from Saskatchewan who was diagnosed with Samter's Triad in 2017. It started as a question in the Samter's Society Facebook group, and the members there asked for most of what is in it.</p>
     <p>The app is free and it will stay free. Your logs live on your phone. Your data is never sold, to anyone, ever.</p>
+  </section>
+
+  <section class="signup">
+    <h2>Be first to know when AERDaily launches</h2>
+    <p>Join the launch list. One email when the app lands in the App Store and Google Play, and a short newsletter now and then after that. No spam, your address is never sold, and you can unsubscribe anytime.</p>
+    <form action="https://formsubmit.co/help@aerdaily.com" method="POST">
+      <input type="hidden" name="_subject" value="AERDaily launch list signup">
+      <input type="hidden" name="_next" value="https://aerdaily.com/thanks.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none">
+      <input type="email" name="email" required placeholder="you@example.com" aria-label="Email address">
+      <button type="submit">Join the list</button>
+    </form>
   </section>
 
   <footer>
